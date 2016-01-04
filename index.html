@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Pbar by lastdates</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Pbar</h1>
+        <p>pBar is a simple jQuery plugin to show inline progress bar</p>
+
+        <p class="view"><a href="https://github.com/lastdates/pBar">View the Project on GitHub <small>lastdates/pBar</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/lastdates/pBar/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/lastdates/pBar/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/lastdates/pBar">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="pbar-v10" class="anchor" href="#pbar-v10" aria-hidden="true"><span class="octicon octicon-link"></span></a>pBar v1.0</h1>
+
+<p>pBar is a simple jQuery plugin to show inline progress bar</p>
+
+<ul>
+<li>less than 800B including css</li>
+<li>Tested in IE8, FireFox, Chrome, Touch enabled for mobiles</li>
+<li>Animated loading</li>
+<li><a href="http://code.mgvz.com/pBar/">Live Demo</a></li>
+</ul>
+
+<p><a href="http://code.mgvz.com/pBar/"><img width="223" height="302" src="https://cloud.githubusercontent.com/assets/4730683/12090741/8f64ccc4-b317-11e5-83ba-7da55a870dda.png" alt="Screenshot"></a></p>
+
+<p>To include pBar plugin</p>
+
+<div class="highlight highlight-text-html-basic"><pre>&lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;
+&lt;<span class="pl-ent">script</span> <span class="pl-e">type</span>=<span class="pl-s"><span class="pl-pds">"</span>text/javascript<span class="pl-pds">"</span></span> <span class="pl-e">src</span>=<span class="pl-s"><span class="pl-pds">"</span>jquery.pBar.min.js<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">script</span>&gt;</pre></div>
+
+<p>Sample code</p>
+
+<div class="highlight highlight-text-html-basic"><pre>    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>pBar<span class="pl-pds">"</span></span> <span class="pl-e">data-from</span>=<span class="pl-s"><span class="pl-pds">"</span>34<span class="pl-pds">"</span></span> <span class="pl-e">data-to</span>=<span class="pl-s"><span class="pl-pds">"</span>74<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt; <span class="pl-c">&lt;!-- default colors &lt;#b32,#d31,#ea6,#fa6,#fd8,#ad6,#9c6,#5b6,#6a7&gt; --&gt;</span>
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>pBar<span class="pl-pds">"</span></span> <span class="pl-e">data-from</span>=<span class="pl-s"><span class="pl-pds">"</span>4<span class="pl-pds">"</span></span> <span class="pl-e">data-to</span>=<span class="pl-s"><span class="pl-pds">"</span>84<span class="pl-pds">"</span></span> <span class="pl-e">data-color</span>=<span class="pl-s"><span class="pl-pds">"</span>blue<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt; <span class="pl-c">&lt;!-- single colors --&gt;</span>
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>pBar<span class="pl-pds">"</span></span> <span class="pl-e">data-from</span>=<span class="pl-s"><span class="pl-pds">"</span>84<span class="pl-pds">"</span></span> <span class="pl-e">data-to</span>=<span class="pl-s"><span class="pl-pds">"</span>4<span class="pl-pds">"</span></span> <span class="pl-e">data-color</span>=<span class="pl-s"><span class="pl-pds">"</span>red,yellow,green<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt; <span class="pl-c">&lt;!-- multiple colors --&gt;</span></pre></div>
+
+<p>To update pBar-items after new items are added to document</p>
+
+<div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>.pBar<span class="pl-pds">"</span></span>).<span class="pl-en">pBar</span>();</pre></div>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/lastdates">lastdates</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
