@@ -16,7 +16,7 @@
     <div class="wrapper">
       <header>
         <h1>pBar</h1>
-        <p>pBar is a simple jQuery plugin to show inline progress bar</p>
+        <p>pBar is a simple jQuery plugin to show inline progress bar &amp; stack bar</p>
 
         <p class="view"><a href="https://github.com/lastdates/pBar">View the Project on GitHub <small>lastdates/pBar</small></a></p>
 
@@ -29,18 +29,18 @@
       </header>
       <section>
         <h1>
-<a id="pbar-v10" class="anchor" href="#pbar-v10" aria-hidden="true"><span class="octicon octicon-link"></span></a>pBar v1.0</h1>
+<a id="pbar-v20" class="anchor" href="#pbar-v20" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>pBar v2.0</h1>
 
-<p>pBar is a simple jQuery plugin to show inline progress bar</p>
+<p>pBar is a simple jQuery plugin to show inline progress bar &amp; stack bar</p>
 
 <ul>
-<li>less than 800B including css</li>
+<li>less than 2kB including css</li>
 <li>Tested in IE8, FireFox, Chrome, Touch enabled for mobiles</li>
 <li>Animated loading</li>
 <li><a href="http://code.mgvz.com/pBar/">Live Demo</a></li>
 </ul>
 
-<p><a href="http://code.mgvz.com/pBar/"><img width="223" height="302" src="https://cloud.githubusercontent.com/assets/4730683/12090741/8f64ccc4-b317-11e5-83ba-7da55a870dda.png" alt="Screenshot"></a></p>
+<p><a href="http://code.mgvz.com/pBar/"><img width="492" height="302" src="https://cloud.githubusercontent.com/assets/4730683/14059390/970659aa-f365-11e5-9b91-3c7369ebfc40.png" alt="Screenshot"></a></p>
 
 <p>To include pBar plugin</p>
 
@@ -49,13 +49,32 @@
 
 <p>Sample code</p>
 
-<div class="highlight highlight-text-html-basic"><pre>    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>pBar<span class="pl-pds">"</span></span> <span class="pl-e">data-from</span>=<span class="pl-s"><span class="pl-pds">"</span>34<span class="pl-pds">"</span></span> <span class="pl-e">data-to</span>=<span class="pl-s"><span class="pl-pds">"</span>74<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt; <span class="pl-c">&lt;!-- default colors &lt;#b32,#d31,#ea6,#fa6,#fd8,#ad6,#9c6,#5b6,#6a7&gt; --&gt;</span>
-    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>pBar<span class="pl-pds">"</span></span> <span class="pl-e">data-from</span>=<span class="pl-s"><span class="pl-pds">"</span>4<span class="pl-pds">"</span></span> <span class="pl-e">data-to</span>=<span class="pl-s"><span class="pl-pds">"</span>84<span class="pl-pds">"</span></span> <span class="pl-e">data-color</span>=<span class="pl-s"><span class="pl-pds">"</span>blue<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt; <span class="pl-c">&lt;!-- single colors --&gt;</span>
-    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>pBar<span class="pl-pds">"</span></span> <span class="pl-e">data-from</span>=<span class="pl-s"><span class="pl-pds">"</span>84<span class="pl-pds">"</span></span> <span class="pl-e">data-to</span>=<span class="pl-s"><span class="pl-pds">"</span>4<span class="pl-pds">"</span></span> <span class="pl-e">data-color</span>=<span class="pl-s"><span class="pl-pds">"</span>red,yellow,green<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt; <span class="pl-c">&lt;!-- multiple colors --&gt;</span></pre></div>
+<div class="highlight highlight-text-html-basic"><pre><span class="pl-c">&lt;!-- single item (progress) bar --&gt;</span>
+
+    <span class="pl-c">&lt;!-- default colors &lt;#b32,#d31,#ea6,#fa6,#fd8,#ad6,#9c6,#5b6,#6a7&gt; --&gt;</span>
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>pBar<span class="pl-pds">"</span></span> <span class="pl-e">data-from</span>=<span class="pl-s"><span class="pl-pds">"</span>34<span class="pl-pds">"</span></span> <span class="pl-e">data-to</span>=<span class="pl-s"><span class="pl-pds">"</span>74<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+
+    <span class="pl-c">&lt;!-- single colors --&gt;</span>
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>pBar<span class="pl-pds">"</span></span> <span class="pl-e">data-from</span>=<span class="pl-s"><span class="pl-pds">"</span>4<span class="pl-pds">"</span></span> <span class="pl-e">data-to</span>=<span class="pl-s"><span class="pl-pds">"</span>84<span class="pl-pds">"</span></span> <span class="pl-e">data-color</span>=<span class="pl-s"><span class="pl-pds">"</span>blue<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+
+    <span class="pl-c">&lt;!-- multiple colors --&gt;</span>
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>pBar<span class="pl-pds">"</span></span> <span class="pl-e">data-from</span>=<span class="pl-s"><span class="pl-pds">"</span>84<span class="pl-pds">"</span></span> <span class="pl-e">data-to</span>=<span class="pl-s"><span class="pl-pds">"</span>4<span class="pl-pds">"</span></span> <span class="pl-e">data-color</span>=<span class="pl-s"><span class="pl-pds">"</span>red,yellow,green<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+
+<span class="pl-c">&lt;!-- stack bar --&gt;</span>
+
+    <span class="pl-c">&lt;!-- stack bar with default colors --&gt;</span>
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>sBar<span class="pl-pds">"</span></span> <span class="pl-e">data-name</span>=<span class="pl-s"><span class="pl-pds">"</span>a,b,c,d,e<span class="pl-pds">"</span></span> <span class="pl-e">data-value</span>=<span class="pl-s"><span class="pl-pds">"</span>3,4,5,6,7<span class="pl-pds">"</span></span> <span class="pl-e">style</span>=<span class="pl-s"><span class="pl-pds">"</span>width:150px;height:15px;<span class="pl-pds">"</span></span>&gt;&lt;/<span class="pl-ent">div</span>&gt;
+
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>sBar<span class="pl-pds">"</span></span> <span class="pl-e">style</span>=<span class="pl-s"><span class="pl-pds">"</span>width:150px;height:15px;<span class="pl-pds">"</span></span>
+        <span class="pl-e">data-name</span>=<span class="pl-s"><span class="pl-pds">"</span>Present,Absent,On Duty,On Leave,Half Day<span class="pl-pds">"</span></span>
+        <span class="pl-e">data-value</span>=<span class="pl-s"><span class="pl-pds">"</span>1221,512,311,414,115<span class="pl-pds">"</span></span>
+        <span class="pl-e">data-color</span>=<span class="pl-s"><span class="pl-pds">"</span>#8a1,#d13,#EA991A,#EAC51A,#0ff<span class="pl-pds">"</span></span>
+    &gt;</pre></div>
 
 <p>To update pBar-items after new items are added to document</p>
 
-<div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>.pBar<span class="pl-pds">"</span></span>).<span class="pl-en">pBar</span>();</pre></div>
+<div class="highlight highlight-source-js"><pre><span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>.pBar<span class="pl-pds">"</span></span>).<span class="pl-en">pBar</span>(); <span class="pl-c">// to update single item (progress) bars</span>
+<span class="pl-en">$</span>(<span class="pl-s"><span class="pl-pds">"</span>.pBar<span class="pl-pds">"</span></span>).<span class="pl-en">sBar</span>(); <span class="pl-c">// to update stacked item bars</span></pre></div>
       </section>
       <footer>
         <p>This project is maintained by <a href="https://github.com/lastdates">lastdates</a></p>
