@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="https://lastdates.github.io/vSort/stylesheets/styles.css">
 	<style>body{padding:20px}header{position:static;float:none}header ul{position:absolute;right:28px;top:20px;}</style>
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-	<script type="text/javascript" src="jquery.pBar.min.js"></script>
+	<script type="text/javascript" src="jquery.pBar.js"></script>
 </head>
 <body>
 	<header>
@@ -23,7 +23,8 @@
 
 	<div class="pBar" data-from="4" data-to="84" data-color="blue"></div>
 	<div class="pBar" data-from="84" data-to="4" data-color="red,yellow,green"></div>
-	<div class="pBar" data-from="34" data-to="74"></div><br>
+	<div class="pBar" data-from="34" data-to="74"></div>
+	&nbsp; <b onclick="$('.pBar').pBarVal(20)">set to 20</b><br>
 	<div class="pBar" data-from="34" data-to="5"></div><br>
 	<div class="pBar" data-from="34" data-to="16"></div><br>
 	<div class="pBar" data-from="34" data-to="27"></div><br>
@@ -33,7 +34,9 @@
 	<div class="pBar" data-from="34" data-to="71"></div><br>
 	<div class="pBar" data-from="34" data-to="82"></div><br>
 	<div class="pBar" data-from="34" data-to="93"></div><br>
-	<div class="pBar" data-from="34" data-to="100" style="width:99px;height:30px;"></div> 100%<br>
+	<div id="set" class="pBar" data-from="34" data-to="100" style="width:99px;height:30px;"></div> 100%<br><br>
+	Bring mouse over the bar for details<br>
+	<div class="sBar" data-name="a,b,c,d,e" data-value="3,4,5,6,7" style="width:150px;height:15px;"></div>
 </div>
 </body>
 </html>
