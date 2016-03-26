@@ -18,8 +18,11 @@ Sample code
 	<div class="pBar" data-from="34" data-to="74"></div> <!-- default colors <#b32,#d31,#ea6,#fa6,#fd8,#ad6,#9c6,#5b6,#6a7> -->
 	<div class="pBar" data-from="4" data-to="84" data-color="blue"></div> <!-- single colors -->
 	<div class="pBar" data-from="84" data-to="4" data-color="red,yellow,green"></div> <!-- multiple colors -->
+
 <!-- stack bar -->
-	<div class="sBar" data-name="a,b,c,d,e" data-value="3,4,5,6,7" style="width:150px;height:15px;"></div> <!-- stack bar with default colors -->
+	<!-- stack bar with default colors -->
+	<div class="sBar" data-name="a,b,c,d,e" data-value="3,4,5,6,7" style="width:150px;height:15px;"></div>
+	
 	<div class="sBar" style="width:150px;height:15px;"
 		data-name="Present,Absent,On Duty,On Leave,Half Day"
 		data-value="1221,512,311,414,115"
