@@ -15,11 +15,19 @@ To include pBar plugin
 
 Sample code
 ```html
-	<div class="pBar" data-from="34" data-to="74"></div> <!-- default colors <#b32,#d31,#ea6,#fa6,#fd8,#ad6,#9c6,#5b6,#6a7> -->
-	<div class="pBar" data-from="4" data-to="84" data-color="blue"></div> <!-- single colors -->
-	<div class="pBar" data-from="84" data-to="4" data-color="red,yellow,green"></div> <!-- multiple colors -->
+<!-- single item (progress) bar -->
+
+	<!-- default colors <#b32,#d31,#ea6,#fa6,#fd8,#ad6,#9c6,#5b6,#6a7> -->
+	<div class="pBar" data-from="34" data-to="74"></div>
+	
+	<!-- single colors -->
+	<div class="pBar" data-from="4" data-to="84" data-color="blue"></div>
+	
+	<!-- multiple colors -->
+	<div class="pBar" data-from="84" data-to="4" data-color="red,yellow,green"></div>
 
 <!-- stack bar -->
+
 	<!-- stack bar with default colors -->
 	<div class="sBar" data-name="a,b,c,d,e" data-value="3,4,5,6,7" style="width:150px;height:15px;"></div>
 	
