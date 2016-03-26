@@ -1,6 +1,6 @@
-# pBar v1.0
-pBar is a simple jQuery plugin to show inline progress bar
-* less than 800B including css
+# pBar v2.0
+pBar is a simple jQuery plugin to show inline progress bar & stack bar
+* less than 2kB including css
 * Tested in IE8, FireFox, Chrome, Touch enabled for mobiles
 * Animated loading
 * [Live Demo](http://code.mgvz.com/pBar/)
@@ -24,3 +24,5 @@ To update pBar-items after new items are added to document
 ```javascript
 $(".pBar").pBar();
 ```
+
+Documentation for sBar to be added
